@@ -30,7 +30,6 @@ public class UserDAO {
         conn.close();
     }
 
-    // Authentification
     public boolean authentifier(String login, String password) throws Exception {
 
         Connection conn = Configuration.getConnection();
@@ -49,7 +48,6 @@ public class UserDAO {
         return ok;
     }
 
-    // Reset password
     public void resetPassword(int idUser, String newPass) throws Exception {
 
         Connection conn = Configuration.getConnection();
@@ -64,7 +62,6 @@ public class UserDAO {
         conn.close();
     }
 
-    // Rechercher user
     public User rechercher(int idUser) throws Exception {
 
         Connection conn = Configuration.getConnection();
